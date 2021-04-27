@@ -26,7 +26,7 @@ export function makeStrings(arr) {
 
 export function readyToPutInTheDom(arr) {
   return arr.map(str => {
-    for (str in arr){
+    for (str of arr){
       const names = document.createElement('h1');
       names.textContent = str.name;
       const ages = document.createElement('h2');

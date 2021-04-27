@@ -51,7 +51,7 @@ test('return names only', () => {
   ]); // assert
 });
 
-test('turn into title form', () => {
+test('return weird matrix sentence', () => {
   const input = [
     {
       name: 'Angelina Jolie',
@@ -75,6 +75,7 @@ test('turn into title form', () => {
     }
   ]; // arrange
   const output = makeStrings(input); // act
+  console.log(output);
   expect(output).toEqual([
     'Angelina Jolie can go to The Matrix', 
     'Eric Jones is under age!!', 
