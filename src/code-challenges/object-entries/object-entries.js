@@ -9,7 +9,3 @@ export function sortedArraysByValuesLength(obj) {
 
 }
 
-// export function sortedKeys(obj) {
-//   const newObj = Object.keys((obj));
-//   return newObj.sort((a, b) => a.length - b.length);
-// }
