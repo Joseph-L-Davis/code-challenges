@@ -4,8 +4,11 @@ export function getArrayOfKeysAndValues(obj) {
 }
 
 export function sortedArraysByValuesLength(obj) {
-  const newObj = Object.entries((obj));
-  return newObj.sort((a, b) => b.length - a.length);
-
+  const ageObj = Object.entries(obj);
+  return ageObj.sort((a, b) => {
+    if (b[0].length > a[0].length) return 1;
+    if (b[0].length < a[0].length) return -1;
+    return 0;
+  });
 }
 
